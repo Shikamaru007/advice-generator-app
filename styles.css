@@ -29,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 570px;
+    max-width: 590px;
     text-align: center;
     background-color: var(--Dark-Grayish-Blue);
     gap: 2rem;
@@ -64,8 +64,30 @@ body{
     transform: translate(50%, 50%);
     cursor: pointer;
     transition: all .1s ease;
+    user-select: none;
 }
 .btn:hover{
     box-shadow: 0 0 3rem hsla(150, 100%, 66%, 0.616);
     background-color: hsl(150, 100%, 70%);
+}
+.divider{
+    display: flex;
+    width: 100%;
+}
+.divider img{
+    width: 100%;
+    user-select: none;
+}
+.desktop-divider{
+    display: none;
+}
+
+
+@media screen and (min-width:530px){
+    .mobile-divider{
+        display: none;
+    }
+    .desktop-divider{
+        display: block;
+    }
 }
