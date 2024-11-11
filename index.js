@@ -24,7 +24,7 @@ function displayAdvice(advice){
     const textBox = document.getElementById("quote");
     const adviceCount = document.getElementById("adviceCount");
 
-    textBox.innerText = advice;
+    textBox.innerText = `“ ${advice} ”`;
     count++;
     adviceCount.textContent = count;
 }
